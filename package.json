@@ -4,7 +4,6 @@
   "description": "A Superclean, Minimal, Sass-based CSS Framework",
   "author": "amazingSurge <amazingSurge@gmail.com>",
   "homepage": "https://github.com/amazingSurge/primary-css",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/amazingSurge/primary-css"
