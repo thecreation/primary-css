@@ -8,7 +8,7 @@
 * [Installation](#installation)
 * [Structure](#structure)
 * [Customize Your Build](#customize-your-build)
-* [Browser support](#browser-support)
+* [Browser Support](#browser-support)
 * [License](#license)
 
 ## Introduction
@@ -19,15 +19,15 @@ Primary.css provides a robust CSS foundation of HTML typography, forms, and elem
 
 There are several ways of installing the awesome that is primary.css:
 
-#### Install manually
+### Install manually
 
-Download the compiled and minified [Primary CSS file]({{site.repo}}/releases/). And include `primary.css` located in `/css` in your website or Web app &lt;head&gt; part.
+Download the compiled and minified [Primary CSS file](https://github.com/amazingSurge/primary-css/releases/). And include `primary.css` located in `/css` in your website or Web app &lt;head&gt; part.
 
 ```html
 <link rel="stylesheet" href="primary.min.css" />`
 ```
 
-#### Install from CDN
+### Install from CDN
 
 Alternatively, you can use the [unpkg](https://unpkg.com/) CDN to load compiled primary.css.
 
@@ -35,7 +35,7 @@ Alternatively, you can use the [unpkg](https://unpkg.com/) CDN to load compiled 
 <link rel="stylesheet" href="https://unpkg.com/primary.css@1.0.0/css/primary.min.css" crossorigin="anonymous">
 ```
 
-#### Install with NPM
+### Install with NPM
 
 Install primary.css for your Node powered apps with the [npm package](https://www.npmjs.com/package/primary.css):
 
@@ -43,7 +43,7 @@ Install primary.css for your Node powered apps with the [npm package](https://ww
 npm install primary.css
 ```
 
-#### Install with Yarn
+### Install with Yarn
 
 Install primary.css with [yarn](https://github.com/yarnpkg/yarn):
 
@@ -51,12 +51,12 @@ Install primary.css with [yarn](https://github.com/yarnpkg/yarn):
 yarn add primary.css
 ```
 
-#### GitHub
+### GitHub
 
 Clone the repo from GitHub download the source CSS, and documentation files.
 
 ```bash
-git clone {{site.repo}}.git
+git clone https://github.com/amazingSurge/primary-css.git
 ```
 
 ## Structure
@@ -92,7 +92,7 @@ Just follow the following steps:
 
 2.  Clone the project:
 
-        git clone {{site.repo}}.git
+        git clone https://github.com/amazingSurge/primary-css.git
 
 3.  Install the dependencies:
 
@@ -101,7 +101,7 @@ Just follow the following steps:
 
 When completed, you’ll be able to run the various commands provided from the command line.
 
-#### Gulp commands
+### Gulp commands
 
 Task name            | Description                                                      
 :--------------------|:----------------------------------
@@ -115,7 +115,7 @@ Task name            | Description
 `gulp version:patch` | PATCH version when you make backwards-compatible bug fixes.
 `gulp version`       | alias to `version:path`.
 
-## Browser support
+## Browser Support
 
 Primary.css uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers. Primary.css is designed for modern browsers. For best compatibility, these browsers are recommended:
 
