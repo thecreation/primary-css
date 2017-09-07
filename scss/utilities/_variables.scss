@@ -1,0 +1,101 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+// Colors
+// -------------------------
+$color-primary: $color-blue-8 !default;
+$color-secondary: $color-orange-7 !default;
+$color-text: rgba(0, 0, 0, 0.8) !default;
+$color-disabled: rgba(0, 0, 0, 0.38) !default;
+$color-dark: $color-gray-8;
+$color-light: #fff;
+$color-gray: $color-gray-5;
+$color-gray-dark: $color-gray-6;
+$color-gray-light: $color-gray-4;
+$color-border: $color-gray-2 !default;
+$color-border-dark: $color-gray-3;
+$color-bg: $color-gray-0;
+$color-bg-dark: $color-gray-1;
+$color-bg-light: rgba($color-bg, 0.5);
+$color-success: $color-green-7;
+$color-info: $color-teal-7;
+$color-warning: $color-orange-7;
+$color-danger: $color-red-7;
+
+// Spacing
+// -------------------------
+$spacer: 1rem !default;
+
+// Typography
+// -------------------------
+$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$family-primary: $family-sans-serif !default;
+$family-code: $family-monospace !default;
+
+// Font weight
+// -------------------------
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+
+// Line height
+// -------------------------
+$line-height-base: 1.5 !default;
+$line-height-small: 1.2 !default;
+$line-height-large: 1.7 !default;
+
+// Font size
+// -------------------------
+$font-size-base: 16px !default;
+$font-size-large: ceil(($font-size-base * 1.25)) !default;
+$font-size-small: ceil(($font-size-base * 0.875)) !default;
+
+// Headings
+// -------------------------
+// http://type-scale.com/
+$font-size-h1: ceil(($font-size-base * 3.998)) !default;
+$font-size-h2: ceil(($font-size-base * 2.827)) !default;
+$font-size-h3: ceil(($font-size-base * 1.999)) !default;
+$font-size-h4: ceil(($font-size-base * 1.414)) !default;
+$font-size-h5: $font-size-base !default;
+$font-size-h6: $font-size-small !default;
+$font-size-h1-mobile: ceil(($font-size-base * 1.75)) !default;
+$font-size-h2-mobile: ceil(($font-size-base * 1.5)) !default;
+$font-size-h3-mobile: ceil(($font-size-base * 1.25)) !default;
+$font-size-h4-mobile: ceil(($font-size-base * 1.1)) !default;
+$font-size-h5-mobile: $font-size-base !default;
+$font-size-h6-mobile: $font-size-small !default;
+$headings-font-family: inherit !default;
+$headings-font-weight: $font-weight-semibold !default;
+$headings-line-height: $line-height-small !default;
+$headings-color: inherit !default;
+$headings-margin-bottom: 0.5em !default;
+
+// Responsiveness
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+// -------------------------
+$tablet: 769px !default;
+// 960px container + 40px
+$desktop: 1000px !default;
+// 1152px container + 40
+$widescreen: 1192px !default;
+// 1344px container + 40
+$fullhd: 1384px !default;
+
+// Border
+// -------------------------
+$border: 1px solid $color-border !default;
+
+// Radius
+// -------------------------
+$border-radius: 5px !default;
+$border-radius-small: 3px !default;
+$border-radius-large: 8px !default;
+
+// Miscellaneous
+// -------------------------
+$easing: ease-out !default;
+$speed: 86ms !default;

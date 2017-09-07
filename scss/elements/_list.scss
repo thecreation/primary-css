@@ -1,0 +1,50 @@
+// ==========================================================================
+// List
+// ==========================================================================
+$list-margin-bottom: $spacer !default;
+$list-line-height: $line-height-base !default;
+$dd-margin-bottom: $spacer !default;
+$list-padding-left: 1.5 * $spacer !default;
+
+dl,
+ol,
+ul {
+  line-height: $list-line-height;
+  list-style: none;
+  margin-bottom: $list-margin-bottom;
+  margin-top: 0;
+  padding-left: $list-padding-left;
+
+  dl,
+  ol,
+  ul {
+    margin-bottom: 0;
+  }
+}
+
+ol {
+  list-style: decimal;
+}
+
+ul {
+  list-style: circle;
+}
+
+dl {
+  margin-bottom: $list-margin-bottom;
+}
+
+li {
+  p {
+    white-space: nowrap;
+  }
+}
+
+dt {
+  font-weight: $font-weight-bold;
+}
+
+dd {
+  margin-bottom: $dd-margin-bottom;
+  margin-left: 0;
+}

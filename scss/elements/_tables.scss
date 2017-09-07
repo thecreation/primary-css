@@ -1,0 +1,44 @@
+// ==========================================================================
+// Tables
+// ==========================================================================
+$table-cell-padding: 0.5rem !default;
+$table-bg-color: transparent !default;
+$table-border-color: $color-border;
+$table-stripe-bg-color: $color-bg-light;
+$table-margin-bottom: $spacer;
+
+table {
+  background-color: $table-bg-color;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: $table-margin-bottom;
+  max-width: 100%;
+  width: 100%;
+
+  & tr:nth-child(odd) td {
+    background-color: $table-stripe-bg-color;
+  }
+}
+
+thead {
+  border-bottom: 1px solid $table-border-color;
+}
+
+th {
+  font-weight: $font-weight-medium;
+  text-align: left;
+  vertical-align: bottom;
+}
+
+tr {
+  border-bottom: 1px solid $table-border-color;
+}
+
+th,
+td {
+  padding: $table-cell-padding;
+}
+
+td {
+  vertical-align: middle;
+}

@@ -1,0 +1,22 @@
+// ==========================================================================
+// Link
+// ==========================================================================
+$link-color: $color-primary !default;
+$link-text-decoration: underline !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-text-decoration: underline !default;
+
+// 1. Remove the gray background on active links in IE 10.
+// 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+a {
+  background-color: transparent; // 1
+  color: $link-color;
+  text-decoration: $link-text-decoration;
+  -webkit-text-decoration-skip: objects; // 2
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: $link-hover-text-decoration;
+  }
+}

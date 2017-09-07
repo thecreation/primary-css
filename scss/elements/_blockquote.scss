@@ -1,0 +1,26 @@
+// ==========================================================================
+// Blockquote
+// ==========================================================================
+$blockquote-padding: 0 1em !default;
+$blockquote-font-family: inherit !default;
+$blockquote-font-weight: $font-weight-medium !default;
+$blockquote-font-size: $font-size-large !default;
+$blockquote-font-style: normal !default;
+$blockquote-line-height: $line-height-small !default;
+$blockquote-margin-bottom: $spacer !default;
+
+blockquote {
+  font-family: $blockquote-font-family;
+  font-size: $blockquote-font-size;
+  font-style: $blockquote-font-style;
+  font-weight: $blockquote-font-weight;
+  line-height: $blockquote-line-height;
+  margin-bottom: $blockquote-margin-bottom;
+  margin-left: 0;
+  margin-right: 0;
+  padding: $blockquote-padding;
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}

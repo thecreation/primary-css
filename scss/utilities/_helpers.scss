@@ -1,0 +1,8 @@
+
+// Helpers
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Clear a float with .clearfix
+.clearfix {
+  @include clearfix();
+}

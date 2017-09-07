@@ -1,0 +1,45 @@
+// ==========================================================================
+// Pre
+// ==========================================================================
+$pre-margin: $spacer 0 !default;
+$pre-padding: 1em !default;
+$pre-font-family: $family-code !default;
+$pre-font-weight: normal !default;
+$pre-font-size: $font-size-small !default;
+$pre-color: inherit !default;
+$pre-tab-size: 4 !default;
+$pre-hyphens: none !default;
+$pre-line-height: $line-height-small !default;
+$pre-background: $color-bg !default;
+$pre-border: $border !default;
+$pre-border-radius: $border-radius !default;
+$pre-code-color: $color-text !default;
+
+pre {
+  background: $pre-background;
+  border: $pre-border;
+  color: $pre-color;
+  direction: ltr;
+  font-family: $pre-font-family;
+  font-size: $pre-font-size;
+  font-weight: $pre-font-weight;
+  hyphens: none;
+  margin: $pre-margin;
+  overflow: auto;
+  padding: $pre-padding;
+  tab-size: $pre-tab-size;
+  text-align: left;
+  white-space: pre;
+  word-break: normal;
+  word-spacing: normal;
+
+  & code {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: $pre-code-color;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+  }
+}

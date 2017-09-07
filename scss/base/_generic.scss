@@ -1,0 +1,67 @@
+// ==========================================================================
+// Generic
+// ==========================================================================
+$body-bg-color: #fff !default;
+$body-size: $font-size-base !default;
+$body-rendering: optimizeLegibility !default;
+$body-family: $family-primary !default;
+$body-color: $color-text !default;
+$body-weight: $font-weight-normal !default;
+$body-line-height: $line-height-base !default;
+$selection-color: #000 !default;
+$selection-bg-color: #b3d4fc !default;
+
+html {
+  background-color: $body-bg-color;
+  font-size: $body-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: $body-rendering;
+  text-size-adjust: 100%;
+}
+
+body {
+  color: $body-color;
+  font-family: $body-family;
+  font-size: 1rem;
+  font-weight: $body-weight;
+  line-height: $body-line-height;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+main,
+section,
+details,
+menu,
+summary {
+  display: block;
+}
+
+::-moz-selection {
+  background-color: $selection-bg-color;
+  color: $selection-color;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: $selection-bg-color;
+  color: $selection-color;
+  text-shadow: none;
+}
+
+// Remove the tapping delay on clickable elements.
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  touch-action: manipulation;
+}

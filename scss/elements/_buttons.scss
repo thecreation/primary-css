@@ -1,0 +1,112 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+$button-bg-color: $color-primary !default;
+$button-border-color: $color-border !default;
+$button-border-radius: $border-radius !default;
+$button-color: $color-white !default;
+$button-font-size: $font-size-base !default;
+$button-padding: 0.5em 1em !default;
+$button-line-height: $line-height-base !default;
+$button-hover-bg-color: darken($button-bg-color, 5%) !default;
+$button-hover-border-color: darken($button-border-color, 5%) !default;
+$button-active-bg-color: $button-hover-bg-color !default;
+$button-active-border-color: $button-hover-border-color !default;
+$button-focus-bg-color: $button-hover-bg-color !default;
+$button-focus-border-color: $button-hover-border-color !default;
+$button-disabled-opacity: 0.5 !default;
+
+// Remove the margin in Firefox and Safari.
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+// Show the overflow in IE.
+button,
+input {
+  overflow: visible;
+}
+
+// Remove the inheritance of text transform in Edge, Firefox, and IE.
+button,
+select {
+  text-transform: none;
+}
+
+// 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+//    controls in Android 4.
+// 2. Correct the inability to style clickable types in iOS and Safari.
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+// Remove the inner border and padding in Firefox.
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+// Restore the focus styles unset by the previous rule.
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+input[type=submit],
+input[type=reset],
+button {
+  background: $button-bg-color;
+  border: 1px solid $button-border-color;
+  border-radius: $button-border-radius;
+  color: $button-color;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $button-font-size;
+  line-height: $button-line-height;
+  margin: 0;
+  padding: $button-padding;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:not(:disabled) {
+    &:hover {
+      background: $button-hover-bg-color;
+      border-color: $button-hover-border-color;
+    }
+
+    &:active {
+      background: $button-active-bg-color;
+      border-color: $button-active-border-color;
+      box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.2);
+      outline-offset: -2px;
+    }
+
+    &:focus {
+      background: $button-focus-bg-color;
+      border-color: $button-focus-border-color;
+      box-shadow: inset 0 0 4px 0 rgba(0, 0, 0, 0.2);
+      outline: 0;
+    }
+  }
+
+  &:disabled {
+    box-shadow: none;
+    cursor: not-allowed;
+    opacity: $button-disabled-opacity;
+    text-decoration: none;
+  }
+}
+

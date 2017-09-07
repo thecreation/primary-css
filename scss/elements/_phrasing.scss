@@ -1,0 +1,57 @@
+// ==========================================================================
+// Phrasing
+// ==========================================================================
+$emphasis-font-style: italic !default;
+$del-color: $color-danger !default;
+$ins-color: $color-success !default;
+$mark-color: $color-text !default;
+$mark-bg-color: $color-yellow-3 !default;
+$mark-padding: 0.2em !default;
+
+em {
+  font-style: $emphasis-font-style;
+}
+
+abbr[title] {
+  border-bottom: none;
+  cursor: help;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+// Add the correct font size in all browsers.
+small {
+  font-size: 80%;
+}
+
+// Prevent `sub` and `sup` elements from affecting the line height in
+// all browsers.
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+del {
+  color: $del-color;
+}
+
+ins {
+  color: $ins-color;
+}
+
+mark {
+  background: $mark-bg-color;
+  color: $mark-color;
+  padding: $mark-padding;
+}

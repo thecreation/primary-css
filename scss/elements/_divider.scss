@@ -1,0 +1,17 @@
+// ==========================================================================
+// Divider
+// ==========================================================================
+$hr-bg-color: $color-border !default;
+$hr-height: 1px !default;
+$hr-margin: 2 * $spacer 0 !default;
+
+// 1. Add the correct box sizing in Firefox.
+// 2. Show the overflow in Edge and IE.
+hr {
+  background-color: $hr-bg-color;
+  border: 0;
+  box-sizing: content-box; // 1
+  height: $hr-height;
+  margin: $hr-margin;
+  overflow: visible; // 2
+}

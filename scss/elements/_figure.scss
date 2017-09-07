@@ -1,0 +1,20 @@
+// ==========================================================================
+// Figure
+// ==========================================================================
+$figure-margin: $spacer !default;
+$figure-caption-margin: 1em 0 !default;
+$figure-caption-font-size: $font-size-small !default;
+$figure-caption-text-align: center !default;
+
+figure {
+  display: block;
+  margin: $figure-margin;
+  padding: 0;
+}
+
+figcaption {
+  display: block;
+  font-size: $figure-caption-font-size;
+  margin: $figure-caption-margin;
+  text-align: $figure-caption-text-align;
+}
